@@ -16,6 +16,7 @@ PREDICTION_PATH = "predictions.csv"
 
 # Создание папки, если она не существует
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+os.makedirs("tmp", exist_ok=True)
 
 # Инициализация приложения
 app = FastAPI(

@@ -133,10 +133,6 @@ dmypy.json
 # MacOs
 .DS_Store
 
-# bootcamp stuff
-/datasets
-/tmp
-
 # flask enviromment
 learning/16-production/flask_demo/Include
 learning/16-production/flask_demo/Lib
