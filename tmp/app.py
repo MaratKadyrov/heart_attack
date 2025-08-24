@@ -1,11 +1,13 @@
 import os
 from fastapi import FastAPI, File, UploadFile, Request
 from fastapi.templating import Jinja2Templates
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
+import shutil
 import uvicorn
 import argparse
 import logging
 from fastapi.staticfiles import StaticFiles
+import pandas as pd
 from model import Model
 
 MODEL_PATH = "models/model_heart_attack.pkl"
